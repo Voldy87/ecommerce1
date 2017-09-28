@@ -1,0 +1,119 @@
+/* ----------------- E' LO STILE CHE VIENE ADOTTATO NEL MODULO DI ISCRIZIONE, CIOE' ISCRIZIONE.PHP*/
+
+
+.span_error{
+color:red;
+font-size: 13pt;
+}
+
+#modulo{ 
+border: medium double black;
+width: /*580px*/65%;
+padding-top: 1px;
+padding-left:10px;
+padding-right:10px;
+padding-bottom:3px;
+background-color:#FF7010;/*background-image:url('../Immagini/Varie/Sfondo1.jpg');*/
+}
+
+
+.bloccoform { 
+font-size:14.5pt;
+background-image:url('../Immagini/Varie/Sfondo1.jpg');
+border: medium dashed black;
+margin-top: 15px;
+padding: 5px;
+line-height: 120%;
+width: auto;
+}
+
+.bloccoform input ,select{
+height:	18pt;
+width: 29%;
+font-size: 10pt;
+}
+
+#div_conferma{font-weight: normal;}
+
+#div_newsletter{
+border-style: outset;
+border-color: olive;
+margin-top: 15px;
+width: 56%;}
+
+.iscr_button{
+width: auto;
+height: auto;
+border: medium solid black;
+padding-bottom: 4px;
+font-family: Tahoma;
+font-weight: bold;
+font-variant: small-caps;
+background-color:yellow;
+color:black;
+cursor:pointer;
+}
+
+.divform{ margin-top:-18px; margin-right: 23px;
+background-color:white;
+text-align: center;
+border: solid red;
+font-size: 18pt;
+padding: 2px;
+display: none;
+float:right;
+}
+
+.div_form{
+background-color:red;
+border-style: dotted;
+font-family: Arial;
+font-size: small;
+}
+
+.p_form{
+font-style: italic;
+font-weight: bold;
+font-size: small;
+}
+
+
+#span_code_err{
+background-color:red;
+text-align: center;
+border-style: groove;
+font-family: Tahoma;
+font-size: 16pt;
+display: none;
+}
+
+#registrazione{
+margin-top:18%;
+background-color:white;
+text-align:justify;
+padding-left:22px;
+padding-right: 2px;
+padding-top:38px;
+padding-bottom:5px;
+width:95%;
+height:150px;
+font-family:"Lucida Sans";
+font-size: 22pt;
+}
+
+#reg_ok{
+color:blue;
+}
+
+#reg_no{
+color:red;
+}
+
+.access_alert {
+margin-bottom:4px;
+padding:3px;
+border-color:red;
+border-style:solid;
+border-width:2px;
+background-color:#F0C0B0;
+}

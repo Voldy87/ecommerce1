@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Express MagicShoe</title>
+    <link rel="stylesheet" href="../CSS/filters.css">
+    <link rel="stylesheet" href="../CSS/general.css">
+    <script type="text/javascript" src="../JS/hardcode.js"></script>
+    <script type="text/javascript" src="../JS/general.js"> </script>
+    <script type="text/javascript" src="../JS/filters.js"></script>
+</head>
+<body onLoad="bodyLoad()">
+    <h1>International Couriers filter</h1>
+    <div id="divList">
+    </div><br>
+    <div id="divFilt">
+        <form action="#" onReset="resetHandler()" >
+            Your nation:<br>
+            <input id="txt" type="text" name="textFilt" value="" onInput="changeHandler()" >
+            <br>
+            Max Cost:<br>
+            <input id="int" type="text" name="inteFilt" value="" onInput="changeHandler()" >
+            <br>
+            Order:<br>
+            <input id="dir" type="radio" name="order" value="dir" onchange="changeHandler()" > <label for="dir">Alphabetical</label>
+            <br>
+            <input id="rev" type="radio" name="order" value="rev" onchange="changeHandler()" > <label for="rev">Reverse Alphabetical</label>
+            <br>
+            <input type="reset" value="Reset filter parameters">
+        </form> 
+    </div>
+</body>
+</html>

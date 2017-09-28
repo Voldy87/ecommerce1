@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Express MagicShoe</title>
+    <link rel="stylesheet" href="../CSS/general.css">
+    <script type="text/javascript" src="../JS/hardcode.js"></script>
+    <script type="text/javascript" src="../JS/general.js"> </script>
+</head>
+<body onLoad="bodyLoad()">	  <h4 style="text-align:center; margin: 2% 8%; font-family:Aldus"> <!--TITOLO-->
+		Fake italian shops associated with magicshoe
+	  </h4>
+	  <p style="text-align:justify; margin: 2% 4%; font-family:Garamond; font-size:14pt">
+	     MagicShoe.it si convenziona con negozi in tutta Italia in modo che i nostri clienti possano acquistare 
+	     gli esclusivi prodotti del nostro sito anche non online: inoltre questi accordi economici permettono
+		 al cliente che acquista dei prodotti sul sito di ritirare, senza alcun costo, il prodotto in un negozio nella sua citt&agrave;.
+		 <br>Attualmente MagicShoe.it &eacute; convenzionato con <b>45</b> negozi sparsi in tutta Italia. 
+	  </p>  <!--INTRODUZIONE -->
+		<a href="#toppage" style="position:fixed; left:87%; bottom:11%"> <!--"toppage" è l'id del body di index.php -->
+			<img src="../Multimedia/MiscImg/tornasu.jpg" width="130" alt="TORNA SU" height="35">
+		</a>	<!--PULSANTE CHE PERMETTE DI TORNARE A INIZIO PAGINA-->
+    <table border=1 cellspacing="2" cellpadding="4" style="margin-top:2%; margin-left:6%; margin-bottom:2%">
+	<caption>
+		<em>Esercizi commerciali che hanno stipulato un accordo con MagicShoe.it</em>
+	</caption>
+	  <thead valign="top">
+				<tr>
+				   <th>Region</th>
+				   <th>City</th>
+				   <th>Shop</th>
+			   </tr>
+	 <tbody>
+<script type="text/javascript">
+	  	for (var i =0; i<utilsObj.geo.length; i++) {
+	  		var reg = utilsObj.geo[i].regione;
+	  		for (var j =0; j<utilsObj.geo[i]["elenco_negozi"].length; j++) {
+	  			document.writeln("<tr>");
+	  			document.writeln("<td>"+reg+"</td>");
+	  			document.writeln("<td>"+utilsObj.geo[i]["elenco_negozi"][j][0]+"</td>");
+	  			document.writeln("<td>"+utilsObj.geo[i]["elenco_negozi"][j][1]+"</td>");
+	  			document.writeln("</tr>");
+	  		}
+	  	}
+</script>
+	</table>
+</body>
+</html>

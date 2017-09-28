@@ -1,0 +1,502 @@
+/* E' IL FILE CSS CHE CONTIENE LO STILE APPLICATO SUGLI ELEMENTI GENERICI, CIOE' QUELLI IN INDEX.PHP*/
+
+/*TAG BASE*/
+html{
+margin: 0;
+padding:0
+}
+
+p{text-align: justify;}
+
+body{
+margin-left: 1.4% ;
+margin-right:1.4%;
+margin-top: 0.5% ;
+margin-bottom:3%;
+padding:0;
+}
+
+h3{
+font-family:"Times New Roman";
+font-size: x-large;
+width: auto;
+margin-bottom: -10px;
+}
+
+h4{
+font-family:Arial;
+padding-bottom:1%;
+font-size: 17pt;
+margin-top: 2px;
+margin-bottom: 2px;
+}
+
+h6{
+font-family:"Franklin Gothic";
+padding:0px;
+font-size: 15pt;
+margin-top: -1px;
+margin-bottom: -2px;
+text-decoration:underline;
+}
+
+/*layout fisso a 2 colonne con posizionamenti assoluti*/
+
+.container{
+position:relative; 
+width: 98.5%;
+padding-left: 0.7%;
+padding-right: 0.7%;
+} 
+
+.header{
+height:136px; /*l'altezza va fissa perchè  se conteiner/pagina aumenta aumenta anch'essa*/
+background-color:white;
+border-bottom: solid 2px red;
+padding-bottom: 2px}
+
+.navigation{
+background-color:white;
+margin-top:0.5%; 
+margin-left:1%; 
+position:absolute;  /* le coordinate vanno fisse perchè in % se conteiner/pagina aumenta aumentano anch'essi*/
+left: 2px; /*cambiare con right x spostarlo a dx**/
+width: 17.8%; /* quasi uguale al margin-right di content*/
+padding: 0px;
+}
+
+.navigation a{ 
+display:block;
+color:black;
+border: 1px solid red;
+text-decoration:none;
+padding-top: 8px;
+padding-bottom: 8px;
+padding-left: 5px;
+padding-right: 3px;
+font-size:18pt;
+font-family:"Niagara Solid";
+}
+
+.navigation a:hover{
+border-top: 2px solid black;
+border-left: 2px solid black;
+color:red;
+}
+
+.content{			 
+float:left; 
+width:82%;
+margin-left: 18%; /* quasi uguale al width di navigation: cambiare con right x spostarlo a dx*/
+}
+
+.footer {
+	line-height: 40px;
+	text-align: center;
+	padding: 0.5em;
+	background-color: #69c;
+	color: #000;
+	border: solid 1px red;
+	clear: left;
+} 
+
+
+.leftmenu {
+	font-weight:bold;
+	padding-left:20px; 
+	padding-bottom:19px;
+	border-right:0;
+}
+
+.norightborder{border-right-width: 0px !important;}
+
+/*BARRA*/
+
+.titolo{
+text-align:center;
+border: groove red;
+font-size:40pt;
+position:absolute;
+left:20%;
+right:20%;
+width:auto;
+height:auto; 
+padding:16px;
+}
+
+
+.testoscorrevole{ 
+width:100%; 
+text-align:center; 
+border: none; 
+color: blue;
+cursor:default;
+background-color:white;
+font-family: "Arial";
+}
+
+.cornerlogos {
+	margin-bottom: 63px;
+}
+
+.logodx{
+width:13%;
+height:60px; 
+border:0;
+position:absolute;  /* le coordinate verticali vanno fisse perchè in % se conteiner/pagina aumenta aumentano anch'essi*/
+top:21px;
+right:1.5%;
+}
+
+.logosx{
+	width:13%;
+	height:60px; 
+	border:0;
+	position:absolute;  /* le coordinate vanno fisse perchè in % se conteiner/pagina aumenta aumentano anch'essi*/
+	top:21px;
+	left:1.5%;
+}
+
+.Welcome{
+	padding-top:8px;
+	padding-bottom:5px;
+}
+
+#welcome{
+	position:relative; 
+	top:26px; 
+	text-align:center;
+	font-size:19px;
+	}
+
+.myicons{
+	width:26px; 
+	height:28px; 
+	border:0;
+	}
+
+.myicons2{
+	width:26px; 
+	height:25px; 
+	border:0;
+	}
+
+#header_bottom{
+	margin-top:54px;
+	margin-left:1%;
+} 
+
+#header_bottom a{
+text-decoration:none;
+} 
+
+#header_bottom a:hover{
+text-decoration:underline;
+} 
+
+.link1{
+	font-family:Tahoma,Helvetica;
+	font-weight:bolder;
+	font-size:14pt;
+	padding-right: 10px;
+}
+.link1:hover{background-color: yellow;}
+.link1:active{color:red;}
+
+#form_ricerca{
+display:inline; 
+position:absolute; 
+margin-bottom:15px;
+}
+
+#allink{
+font-size: 15pt; 
+font-family:Arial; 
+color:red; 
+font-weight:bold; 
+position:absolute; 
+right:2%;
+}
+
+.spaceunder{
+	margin-bottom:55%;
+}
+
+
+
+.lmarg{
+	margin-left:2.3%;
+}
+
+/*-----------------PRODOTTI----------------------*/
+.prodotto{
+border-style:dotted;  /*  sennò quelli interni posizonati con absolute si riferiscono a body   */
+border-color:red; /*#FFF0E0 	*/
+background-color:white;
+width:30%;
+float:left;
+padding-left:2px;
+padding-right:1px;
+padding-bottom:4px;
+padding-top:6px;
+margin-left:10px;
+margin-right:0px;
+margin-top:10px;
+margin-bottom:10px;
+}
+
+.prodotto_cart{
+border-style:solid;  /*  sennò quelli interni posizonati con absolute si riferiscono a body   */
+border-color:green; /*#FFF0E0 	*/
+background-color:white;
+width:94%;
+float:left;
+padding-left:4px;
+padding-right:20px;
+padding-bottom:0px;
+padding-top:4px;
+margin-left:7px;
+margin-right:0px;
+margin-top:5px;
+margin-bottom:0px;
+}
+
+.prodotto_order{
+border-style:solid;  /*  sennò quelli interni posizonati con absolute si riferiscono a body   */
+border-color:blue; /*#FFF0E0 	*/
+background-color:white;
+width:80%;
+float:left;
+padding-left:4px;
+padding-right:10px;
+padding-bottom:0px;
+padding-top:4px;
+margin-left:7px;
+margin-right:0px;
+margin-top:5px;
+margin-bottom:0px;
+}
+
+.prodotto_buy{
+border-style:solid;  /*  sennò quelli interni posizonati con absolute si riferiscono a body   */
+border-color:blue; /*#FFF0E0 	*/
+background-color:white;
+float:left;
+padding-right:15px;
+padding-bottom:0px;
+padding-top:4px;
+padding-left:4px;
+margin-left:7px;
+margin-right:0px;
+margin-top:5px;
+margin-bottom:0px;
+}
+
+.img_prodotto{
+height: 169px;
+width: 240px;
+display: block;
+margin: 0 auto;
+}
+
+.mini_img_prodotto{
+height: 96px;    
+width: 120px;
+  
+}
+
+.img_prodotto_order{
+height: 68px;    
+width: 90px; 
+padding-left:2px;
+padding-right:7px;
+}
+
+
+.zoom{
+position:relative;
+width:27px;
+left:88%;
+bottom: 165px;
+cursor:pointer;
+}
+
+.mini_zoom{
+height:20px;
+width:19px;
+cursor:pointer;
+}
+
+.wishlist_star{
+position:relative;
+height:24px;
+width:24px;
+bottom:169px;
+left:-30px;
+cursor:pointer;
+}
+
+.cart_img{
+height:51px;
+width:52px;
+position:absolute;
+left:0px;
+bottom:0px;
+}
+
+.mini_cart_img{
+height:42px;
+width:45px;
+}
+
+.wishlist_img{
+height:40px;
+width:40px;
+position:absolute;
+right:5px;
+bottom:0px;
+cursor:pointer;
+}
+
+.bigimg{
+float:left;
+height: 386px;    
+width: 480px; 
+}
+
+.nome_scarpa_zoomata{
+font-size: 44pt;
+padding: 8px;
+color:red;
+font-family:Corbel ;
+}
+
+.etichetta_prodotto{
+position:relative; 
+width:80%; 
+left:40px; 
+text-align:center; 
+font-weight:bold
+}
+
+/*-----------------ACCESSO----------------------*/
+#boxaccesso{
+border: dotted navy;
+background-image:url('../Immagini/Varie/Sfondo2.jpg');
+width: 48%;
+height:33%;
+padding: 15px;
+font-size: 14pt;
+margin-top:19px;
+margin-left:20%;
+}
+
+.gold_button{
+height:40px; 
+width:95px; 
+border-color:yellow; 
+cursor:pointer; 
+font-size: 14pt;
+font-family:"Comic Sans MS";
+color:black;
+background-image:url('../Immagini/Varie/oro.jpg');
+}
+
+.redarrow{
+width:4.5%; 
+height:20px;
+display:inline;
+}
+
+/* link di fondo pagina (faq, privacy....)*/
+.titolo_alternativo{
+text-align:center;
+text-decoration:none;
+font-family:Monospace;
+border: double red;
+font-weight:bolder;
+font-size:50pt;
+margin-left:30%;
+width:40%;
+height:auto; 
+padding:2px;
+}
+
+
+/* VOCIMENU */
+/*--------------------GENERALE-------------------------*/
+.menuprods{
+	float:left; 
+	width:100%;}
+
+/*--------------------WISHLIST-------------------------*/
+.wlelement{
+border-style:dashed;  
+border-color:blue; 
+background-color:yellow;
+width:250px;
+height:250px;
+float:left;
+padding-left:2px;
+padding-right:1px;
+padding-bottom:3px;
+padding-top:1px;
+margin-left:10px;
+margin-right:0px;
+margin-top:10px;
+margin-bottom:10px;
+}
+
+/*--------------------CARRELLO-------------------------*/
+
+#buy{	font-weight: bold;}
+
+/*acquisti*/
+
+.backarrow{
+	width:50px;
+	height:50px;
+}
+
+#svuotacart{
+	float:right; 
+	width:13%; 
+	border: solid 1px green; 
+	margin-right:3%; 
+	padding: 4px; 
+	text-align:center;
+	position: relative;
+	top: 8%;
+	
+}
+#svuotacart img{
+	margin-bottom:10px;
+	text-align:center;
+}
+
+/*--------------------RICERCA-------------------------*/
+.par_ricerca{
+padding-top: 30px;
+text-align: center;
+font-weight: bold;
+font-size: 28px;
+}
+
+#searchres {
+	padding: 28px;
+	font-family: Helvetica, Serif;
+	font-weight: bolder;
+	color: red;
+	font-size: 32px;
+	text-align: center;
+}
+
+#divsearch{margin-bottom:60%;}
+
+/*-----------------ACCOUNT----------------------------*/
+#hdati {
+	position:relative; 
+	bottom:21px;
+	margin-bottom:15px;
+	padding-top:26px;
+}
