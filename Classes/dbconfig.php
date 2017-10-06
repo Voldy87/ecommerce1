@@ -1,9 +1,14 @@
-<?php //se ci sono problemi nella lettura dei parametri come CSV dalla prima riga di creaDB.sql usare host="localhost",user="root",pass="",db="tia"
-	function Connect(&$connessione, &$database){ //connessione al database
-			$ff= @fopen("./Files/createDB.sql","rb");
+<?php
+	function Connect(&$connection, &$database){ //connection to db
+			$ff = @fopen("./Files/createDB_freesql.sql","rb");
 			if (!$ff)
-			    $ff=fopen("../Files/createDB.sql","rb");
-			$arr=fgetcsv($ff);
+			    $ff=fopen("../Files/createDB_freesql.sql","rb");
+			if (!$ff) {			
+			    $ff = @fopen("./Files/createDB_localhost.sql","rb");
+			    if (!$ff)
+			        $ff =fopen("../Files/createDB_localhost.sql","rb");
+			} // github repo doesn't have *_freesql file (remote db), so use local db ( the abovementioned sql script file needs to be executed and the first line updated with the credentials of that database)
+			$arr = fgetcsv($ff);
 			$host = $arr[1]; 
 			$user = $arr[2];
 			if ( strlen($arr[3])==0 )
@@ -12,9 +17,8 @@
 				$password = $arr[3];
 			$database = $arr[4];
 			fclose($ff);
-			//$connessione = mysql_connect($host, $user,$password) or die ("Connessione al database non riuscita: " . mysql_error());
-			//mysql_select_db($database) or die ("Selezione  del database non riuscita: " . mysql_error());
-			$connessione= new mysqli($host, $user,$password, $database);
-			if ($connessione->connect_errno) {echo "failed connection";}
+			$connection = new mysqli($host, $user,$password, $database);
+			if ($connection->connect_errno) 
+				{echo "failed connection";}
 	}
 ?>

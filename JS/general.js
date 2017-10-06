@@ -3,7 +3,7 @@
 var glob={};
 var testo = utilsObj.scrolltext + " - " + utilsObj.scrolltext + " - ";
 	
-var secondi= -1; //serve alla TimeRuns (che la decrementa) far scorrere il tempo; viene inizializzata (5) da Countdown 
+var secondi= -1; //needed by TimeRuns (which decrease it) to make time pass; initialized (5) by Countdown 
 var s;  //serve a CountDown (la resetta) e TimeRuns (la setta) per impostare un intervallo di esecuzione di una funz
 var flag=false; //serve per sapere se devo far partire il countdown: questo accade solo quando la registrazione � andata a buon fine
 
@@ -15,7 +15,7 @@ function zoom (nome){
 	var pre= "<html><head><meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'>";
 	var post1 ="<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'>";
 	var post2 = "<style type='text/css'><!--@import url('../CSS/general.css');--></style></head>";
-   var post3 = "<img src='../Multimedia/ShoesImg/"+path+"' width='75%' height='75%' alt='Immagine del prodotto ingrandita'>";
+   	var post3 = "<img src='../Multimedia/ShoesImg/"+path+"' width='75%' height='75%' alt='Immagine del prodotto ingrandita'>";
 	var post4 = "<div class='nome_scarpa_zoomata'>"+nome+"</div>";
 	var myWindow = window.open("","Zoom");
 	myWindow.document.write(pre+titolo+post1+post2+post3+post4);
@@ -34,18 +34,18 @@ function scorri() {   /*  implementa lo scorrimento della variabile globale "tes
     document.forms[0].miotesto.value = testo;       
 }
 
-function showHP (oggetto){ /* sostituisce l'immagine del logo senza HP con quella del logo con HP*/
-	oggetto.src="../Multimedia/MiscImg/LogoHP.jpg";
-	(oggetto.style).border= "0";
-	(oggetto.style).width="13%"; 
-	(oggetto.style).height="88px";
+function showHP (obj){ /* sostituisce l'immagine del logo senza HP con quella del logo con HP*/
+	obj.src="../Multimedia/MiscImg/LogoHP.jpg";
+	(obj.style).border= "0";
+	(obj.style).width="13%"; 
+	(obj.style).height="88px";
 }
 
-function hideHP(oggetto){ /* sostituisce l'immagine del logo cpn HP con quella del logo senza HP*/
-	 oggetto.src="../Multimedia/MiscImg//Logo.jpg";
-	(oggetto.style).border= "0";
-	(oggetto.style).width="13%"; 
-	(oggetto.style).height="60px";
+function hideHP(obj){ /* sostituisce l'immagine del logo cpn HP con quella del logo senza HP*/
+	 obj.src="../Multimedia/MiscImg//Logo.jpg";
+	(obj.style).border= "0";
+	(obj.style).width="13%"; 
+	(obj.style).height="60px";
 }
 
 function Countdown(secs, url, id){    /*          secs=5, url=index,id=reg_ok: fa in modo che ogni secondo venga  */

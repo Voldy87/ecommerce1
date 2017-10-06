@@ -274,7 +274,7 @@ D;
 			</div>
 			<div class="footer"> <!-- piè di pagina (altre informazioni) -->
 				  <a href="./HTML_PHP/user%20manual.html">User Manual</a> |<!-- information about this site and how to use it -->
-				  <a href="./Files/Contratto.pdf" onclick="window.open(this.href); return false" >Contract</a>| <!-- apre il pdf in un'altra pagina/scheda -->
+				  <a href="./Files/Contract.pdf" onclick="window.open(this.href); return false" >Contract</a>| <!-- apre il pdf in un'altra pagina/scheda -->
 				  <a href="./HTML_PHP/privacy.html">Privacy</a>|
 				  <a href="./HTML_PHP/customers.html">Customer assistance</a>|
 				  <a href="./HTML_PHP/about%20us.html">About Us</a>|
